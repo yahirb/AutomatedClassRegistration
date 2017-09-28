@@ -7,7 +7,7 @@ html, body {
 
 body{
  background-color: #33CA7F;
- font-family: 'Droid Sans', sans-serif;
+ font-family: 'Montserrat', sans-serif;
 }
 
 /*vertically align */
@@ -27,9 +27,13 @@ body{
   background-color: inherit;
 }
 
-#notice {
-  margin: 5px auto;
+/* Header for page */
+h1 {
+  font-weight: bold;
+}
 
+#notice {
+  margin: 10px auto;
 }
 
 /*==========  Mobile Bootstrap 3 Media Queries  ==========*/
@@ -54,7 +58,10 @@ body{
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-
+  #notice{
+    width: 40%;
+  }
+  
 }
 
 /* Large Devices, Wide Screens */
@@ -63,4 +70,41 @@ body{
   #notice{
     width: 40%;
   }
+}
+
+
+/*==========  Customizing Buttons  ==========*/
+
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+
+.button-custom {
+  display: inline-block;
+  padding: 15px;
+  margin-right: 5px;
+  height: 50px;
+  min-width: 100px;
+  background: #348AA7;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 3px;
+  box-shadow: 0 5px 0px #348aa7;
+  border-bottom: 2px solid #30809b;
+  font-family: Montserrat;
+}
+.button-custom:hover {
+  background: #2e7a94;
+  box-shadow: 0 4px 1px #2e7a94;
+  border-bottom: 2px solid #2a7088;
+  transition: all 0.1s ease-in;
+}
+.button-custom:active {
+  transform: translateY(4px);
+  border-bottom-width: 2px;
+  box-shadow: none;
 }
